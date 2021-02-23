@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito, sans-serif;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(to top left, #753682, #bf2e34);
+}
+html {
+  font-size: 62.5%;
+}
+
+main {
+  display: flex;
+  box-shadow: 1rem 1rem 10rem rgba(0, 0, 0, 0.5);
+  border: 0.5px solid rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 1rem;
+  width: 100rem;
+  position: relativ;
+}
+
+.player-1,
+.player-2 {
+  width: 50%;
+  text-align: center;
+  padding: 7rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  margin: 0 0 2rem;
+  font-weight: 400;
+}
+.active {
+  background: rgba(255, 255, 255, 0.6);
+}
+.active h2 {
+  font-weight: 800;
+}
+.player-1 {
+  border-right: 1px solid (255, 255, 255, 0.4);
+}
+
+.score-1,
+.score-2 {
+  font-size: 8rem;
+  margin-top: 0;
+  color: #c7365f;
+}
+
+.current-1,
+.current-2 {
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #c7365f;
+  border-radius: 0.5rem;
+  width: 38%;
+  margin: 4rem 0;
+}
+.current-score-1,
+.current-score-2 {
+  font-size: 3.5rem;
+}
+.current-text,
+.current-score-1,
+.current-score-2 {
+  margin: 1rem;
+}
+button {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #444;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 2.5rem;
+  outline: none;
+  cursor: pointer;
+}
+button:active {
+  transform: translate(-50%, 0.5rem);
+  box-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+}
+.dice-img {
+  width: 10rem;
+  height: 10rem;
+}
+.dice-img,
+.hold,
+.new-game,
+.roll-dice {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.dice-img {
+  top: 25%;
+}
+.new-game {
+  top: 5%;
+}
+.hold {
+  bottom: 19%;
+}
+.roll-dice {
+  bottom: 31%;
+}
